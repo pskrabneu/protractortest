@@ -1,0 +1,25 @@
+{
+  "name": "protractor_test",
+  "version": "0.0.1",
+  "description": "Protractor Test",
+  "main": "",
+  "author": {
+    "name": "Pavel Skrabneu",
+    "email": "skrabneu@gmail.com"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0",
+    "@types/jest": "^23.3.12",
+    "jasmine": "^3.5.0",
+    "jasmine-allure-reporter": "^1.0.2",
+    "jasmine-expect": "^4.0.3",
+    "jasmine-reporters": "^2.3.2",
+    "protractor": "^7.0.0",
+    "protractor-helper": "^4.1.9",
+    "selenium-webdriver": "^3.6.0",
+    "winston": "^3.3.3"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
