@@ -1,3 +1,5 @@
+const protractorHelper = require('protractor-helper');
+
 describe('Test login page:', function() {
     const login = 'angular';
     const password = 'password';
