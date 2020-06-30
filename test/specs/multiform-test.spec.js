@@ -1,4 +1,3 @@
-// import {by} from "protractor";
 const protractorHelper = require('protractor-helper');
 
 describe('Test multiform page:', () => {
