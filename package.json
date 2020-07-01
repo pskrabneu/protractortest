@@ -14,7 +14,7 @@
     "jasmine-allure-reporter": "^1.0.2",
     "jasmine-expect": "^4.0.3",
     "jasmine-reporters": "^2.3.2",
-    "jest": "^23.6.0",
+    "jest": "^26.1.0",
     "protractor": "^7.0.0",
     "protractor-helper": "^4.1.9",
     "selenium-webdriver": "^3.6.0",
@@ -22,5 +22,8 @@
   },
   "scripts": {
     "test": "jest"
+  },
+  "dependencies": {
+    "nodemailer": "^6.4.10"
   }
 }

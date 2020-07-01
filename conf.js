@@ -28,9 +28,12 @@ exports.config = {
             })
         })
     },
+
+    onComplete: function() {
+        console.log('Test is completed');
+    },
     // options to be passed to Jasmine
     jasmineNodeOpts: {
         defaultTimeoutInterval: 30000
     }
-
 };
