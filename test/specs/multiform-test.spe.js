@@ -50,7 +50,6 @@ describe('Test multiform page:', () => {
 
         expect(al.getText()).toContain('awesome!');
         al.accept();
-        browser.sleep(5000);
     });
 })
 
