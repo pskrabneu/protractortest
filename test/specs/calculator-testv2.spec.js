@@ -1,3 +1,4 @@
+// var logger = require('../../log');
 const protractorHelper = require('protractor-helper');
 var SelectWrapper = require('../utils/select-wrapper');
 var userSelect = new SelectWrapper(by.model('operator'));

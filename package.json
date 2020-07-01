@@ -9,6 +9,7 @@
   },
   "devDependencies": {
     "@types/jest": "^23.3.12",
+    "braces": ">=2.3.1",
     "jasmine": "^3.5.0",
     "jasmine-allure-reporter": "^1.0.2",
     "jasmine-expect": "^4.0.3",
@@ -17,8 +18,7 @@
     "protractor": "^7.0.0",
     "protractor-helper": "^4.1.9",
     "selenium-webdriver": "^3.6.0",
-    "winston": "^3.3.3",
-    "braces": ">=2.3.1"
+    "winston": "^3.3.3"
   },
   "scripts": {
     "test": "jest"
