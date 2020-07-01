@@ -21,7 +21,7 @@ SelectWrapper.prototype.selectByPartialText = function (text) {
 SelectWrapper.prototype.selectByText = function (text) {
     return this.webElement.all(by.xpath('option[.="' + text + '"]')).click();
 }
-//xyKV3/^qq.zTWK4Gt54^
+
 module.exports = SelectWrapper;
 
 
