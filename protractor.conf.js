@@ -3,22 +3,20 @@ exports.config = {
     framework: 'jasmine2',
     seleniumAddress: 'http://localhost:4449/wd/hub',
     // webdriver-manager start --seleniumPort 4446 (run with cli)
-    // netstat -anp | find "port number"
-    // telnet 127.0.0.1:4446
     specs: ['test/**/specs/*spec*.js'],
 
     suites: {
-        testCurrent: [
-            'test/specs/banking-app-dataprovider.spec.js'
-        ]},
+        testCurrent: ['test/specs/banking-app-dataprovider.spec.js'],
+        calculator: ['test/specs/calculator-test*.spec.js']
+    },
 
-        multiCapabilities: [{
+    multiCapabilities: [{
         browserName: 'chrome',
         chromeOptions: {args: ['--disable-extensions']}
     }, {
         // browserName: 'firefox'
     }],
-    onPrepare: function() {
+    onPrepare: function () {
         browser.driver.manage().window().maximize();
 
         var AllureReporter = require('jasmine-allure-reporter');
@@ -29,13 +27,13 @@ exports.config = {
             browser.takeScreenshot().then(function (png) {
                 allure.createAttachment('Screenshot-', function () {
                     return new Buffer(png, 'base64')
-                }, 'image/png') ();
+                }, 'image/png')();
                 done();
             })
         })
     },
 
-    onComplete: function() {
+    onComplete: function () {
         console.log('Test is completed');
     },
     // options to be passed to Jasmine
@@ -43,3 +41,6 @@ exports.config = {
         defaultTimeoutInterval: 30000
     }
 };
+
+
+// protractor protractor.conf.js --suite testCurrent

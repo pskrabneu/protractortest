@@ -19,15 +19,6 @@ describe('Test Banking App with DataProvider with a bundle of Users:', function 
         ];
     }
 
-
-
-
-
-
-
-
-
-
     it('page title should contains \'Banking App\'', function () {
         browser.get('http://www.way2automation.com/angularjs-protractor/banking/#/login');
         const title = browser.getTitle();
@@ -36,7 +27,7 @@ describe('Test Banking App with DataProvider with a bundle of Users:', function 
         protractorHelper.hoverAndClick(bCustomerLogin);
     })
 
-/*    using(plusProvider(), function (data) {
+    using(plusProvider(), function (data) {
         it('should chose right userName from DataProvider', function () {
             // protractorHelper.hoverAndClick(bCustomerLogin);
             customerSelect.selectByText(data.userName);
@@ -46,7 +37,7 @@ describe('Test Banking App with DataProvider with a bundle of Users:', function 
             expect(uName).toContain(data.userName);
             bLogout.click();
         });
-    })*/
+    })
 })
 
 

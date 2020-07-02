@@ -1,3 +1,5 @@
+// import {by} from "protractor";
+
 var SelectWrapper = function (selector) {
     this.webElement = element(selector);
 };
