@@ -6,7 +6,13 @@ exports.config = {
     // netstat -anp | find "port number"
     // telnet 127.0.0.1:4446
     specs: ['test/**/specs/*spec*.js'],
-    multiCapabilities: [{
+
+    suites: {
+        testCurrent: [
+            'test/specs/banking-app-dataprovider.spec.js'
+        ]},
+
+        multiCapabilities: [{
         browserName: 'chrome',
         chromeOptions: {args: ['--disable-extensions']}
     }, {
