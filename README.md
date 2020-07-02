@@ -2,6 +2,6 @@
 
 Just experiments with Protractor
 
-Run specific test: "protractor conf.js --suites=testCurrent"
+Run specific test or suite: "protractor conf.js --suites=testCurrent"
 
 
