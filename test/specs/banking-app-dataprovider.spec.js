@@ -28,7 +28,7 @@ describe('Test Banking App with DataProvider with a bundle of Users:', function 
     })
 
     using(plusProvider(), function (data) {
-        it('should chose right userName from DataProvider', function () {
+        xit('should chose right userName from DataProvider', function () {
             // protractorHelper.hoverAndClick(bCustomerLogin);
             customerSelect.selectByText(data.userName);
             protractorHelper.hoverAndClick(bLogin);

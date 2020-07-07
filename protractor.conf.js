@@ -7,12 +7,13 @@ exports.config = {
 
     suites: {
         testCurrent: ['test/specs/banking-app-dataprovider.spec.js'],
-        calculator: ['test/specs/calculator-test*.spec.js']
+        calculator: ['test/specs/calculator-test*.spec.js'],
+        testBankingApp: ['test/specs/bank-manager-login.spec.js'],
+        testAppinium: ['test/specs/proappinium-test.spec.js']
     },
 
     multiCapabilities: [{
-        browserName: 'chrome',
-        chromeOptions: {args: ['--disable-extensions']}
+        browserName: 'chrome'
     }, {
         // browserName: 'firefox'
     }],

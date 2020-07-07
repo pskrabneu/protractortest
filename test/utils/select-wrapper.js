@@ -1,5 +1,3 @@
-// import {by} from "protractor";
-
 var SelectWrapper = function (selector) {
     this.webElement = element(selector);
 };
@@ -24,11 +22,26 @@ SelectWrapper.prototype.selectByText = function (text) {
     return this.webElement.all(by.xpath('option[.="' + text + '"]'));
 }
 
-SelectWrapper.prototype.selectByNgClick = function (text) {
-    return this.webElement.all(by.css('[ng-click()]=' + text + '"]'));
-}
+// define new locator
+by.addLocator('dataHook', (hook) => {
+    return document.querySelector('[data-hook="'
+        + hook
+        + '"]');
+})
+
+by.addLocator('ngClick', (text) => {
+    return document.querySelector('[ng-click="'
+        + text
+        + '"]');
+})
+
+
+/*SelectWrapper.prototype.selectByNgClick = function (text) {
+    return this.webElement.all(by.css('[ng-click="' + text + '"]'));
+}*/
 
 module.exports = SelectWrapper;
+
 
 
 
